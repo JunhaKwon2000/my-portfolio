@@ -251,7 +251,10 @@ header .btn-hamburger .material-symbols-outlined {
 .skill .skill__list {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
   text-align: center;
+
 }
 /* 하위 선택자가 아닌 자식 선택자 쓴 것에 유의! */
 .skill .skill__list > li {
@@ -532,6 +535,68 @@ footer .copyright {
   header nav.active {
     height: 100%;
     transition: 0.3s;
+  }
+
+  .about {
+    padding: 100px 0;
+  }
+
+  .about .about__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .about__wrapper .about__img {
+    width: 100%;
+  }
+
+  .about .about__wrapper .about__text {
+    width: 100%;
+    text-align: center;
+  } 
+
+  .skill {
+    padding: 100px 0;
+  }
+
+  .project {
+    padding: 100px 0;
+  }
+
+  .project .port {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  .project .port .port__img,
+  .project .port .port__text {
+    width: 100%;
+  }
+
+  .project .port .port__text {
+    padding: 20px 0 0;
+    text-align: center;
+  }
+
+  .contact {
+    padding: 100px 0;
+  }
+
+  .project .port .btn-group {
+    justify-content: center;
+  }
+
+  #modal .modal-content,
+  #imageModal .modal-content {
+    width: 80%;
+  }
+
+  #imageModal .modal-body img {
+    width: 100%;
+  }
+
+  .visual > .inner {
+    font-size: 30px;
   }
 }
 
